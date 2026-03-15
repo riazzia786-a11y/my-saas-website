@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard — LaunchKit</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+<div class="dash-layout">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar-top">
+      <a href="index.html" class="sidebar-logo">⬡ LaunchKit</a>
+    </div>
+    <nav class="sidebar-nav">
+      <div class="nav-section">
+        <div class="nav-section-label">Main</div>
+        <a href="dashboard.html" class="nav-item active">
+          <span class="icon">◈</span> Overview
+        </a>
+        <a href="#" class="nav-item">
+          <span class="icon">◉</span> Analytics
+        </a>
+        <a href="#" class="nav-item">
+          <span class="icon">⊞</span> Projects
+        </a>
+        <a href="#" class="nav-item">
+          <span class="icon">◎</span> Users
+        </a>
+      </div>
+      <div class="nav-section">
+        <div class="nav-section-label">Manage</div>
+        <a href="#" class="nav-item">
+          <span class="icon">◐</span> Billing
+        </a>
+        <a href="#" class="nav-item">
+          <span class="icon">⊡</span> Integrations
+        </a>
+        <a href="#" class="nav-item">
+          <span class="icon">⚙</span> Settings
+        </a>
+      </div>
+    </nav>
+    <div class="sidebar-bottom">
+      <div class="user-chip">
+        <div class="user-avatar">AK</div>
+        <div class="user-info">
+          <div class="user-name">Ahmad Khan</div>
+          <div class="user-plan">Free plan</div>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="dash-main">
+    <div class="dash-topbar">
+      <span class="dash-topbar-title">Overview</span>
+      <div class="dash-topbar-right">
+        <button class="topbar-btn">Export</button>
+        <button class="topbar-btn primary">+ New Project</button>
+      </div>
+    </div>
+
+    <div class="dash-content">
+      <div class="dash-greeting">
+        <h1>Good morning, Ahmad 👋</h1>
+        <p>Here's what's happening with your product today.</p>
+      </div>
+
+      <!-- STATS -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-label">Total Users</div>
+          <div class="stat-value" id="stat-users">2,841</div>
+          <div class="stat-change">↑ 12.4% this month</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">MRR</div>
+          <div class="stat-value" id="stat-mrr">$12,400</div>
+          <div class="stat-change">↑ 8.1% this month</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Active Projects</div>
+          <div class="stat-value">3</div>
+          <div class="stat-change">↑ 1 new this week</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Uptime</div>
+          <div class="stat-value">98.9%</div>
+          <div class="stat-change" style="color:var(--text-3)">Last 30 days</div>
+        </div>
+      </div>
+
+      <!-- CHARTS -->
+      <div class="chart-row">
+        <div class="chart-card">
+          <div class="chart-card-header">
+            <div>
+              <div class="chart-card-title">User Growth</div>
+              <div class="chart-card-sub">Last 7 months</div>
+            </div>
+          </div>
+          <div class="chart-bars" id="chart-bars">
+            <!-- filled by JS -->
+          </div>
+        </div>
+        <div class="chart-card">
+          <div class="chart-card-header">
+            <div>
+              <div class="chart-card-title">Plan Distribution</div>
+              <div class="chart-card-sub">Current</div>
+            </div>
+          </div>
+          <div class="donut-wrap">
+            <svg class="donut-svg" viewBox="0 0 120 120">
+              <circle cx="60" cy="60" r="45" fill="none" stroke="#f4f4f0" stroke-width="18"/>
+              <circle cx="60" cy="60" r="45" fill="none" stroke="#1a1a18" stroke-width="18"
+                stroke-dasharray="141.3 141.3" stroke-dashoffset="35"
+                stroke-linecap="round" transform="rotate(-90 60 60)"/>
+              <circle cx="60" cy="60" r="45" fill="none" stroke="#2563eb" stroke-width="18"
+                stroke-dasharray="56.5 226.1" stroke-dashoffset="-106.3"
+                stroke-linecap="round" transform="rotate(-90 60 60)"/>
+            </svg>
+            <div class="donut-center">
+              <div class="donut-pct">2.8k</div>
+              <div class="donut-lbl">users</div>
+            </div>
+          </div>
+          <div class="donut-legend">
+            <div class="legend-item"><span class="legend-dot" style="background:var(--accent)"></span> Free — 62%</div>
+            <div class="legend-item"><span class="legend-dot" style="background:#2563eb"></span> Pro — 25%</div>
+            <div class="legend-item"><span class="legend-dot" style="background:#f4f4f0;border:1px solid #e8e8e2"></span> Team — 13%</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- USER TABLE -->
+      <div class="table-card">
+        <div class="table-card-header">
+          <div class="chart-card-title">Recent Users</div>
+          <button class="topbar-btn">View All</button>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Plan</th>
+              <th>Joined</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="user-table">
+            <!-- filled by JS -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script>
+  // Chart bars
+  const months = ['Sep','Oct','Nov','Dec','Jan','Feb','Mar'];
+  const vals = [38, 52, 47, 68, 61, 83, 72];
+  const barsEl = document.getElementById('chart-bars');
+  months.forEach((m, i) => {
+    const el = document.createElement('div');
+    el.className = 'chart-bar' + (i === 5 ? ' highlight' : '');
+    el.style.height = vals[i] + '%';
+    el.innerHTML = `<span>${m}</span>`;
+    barsEl.appendChild(el);
+  });
+
+  // User table
+  const users = [
+    { name: 'Ahmad Khan', email: 'ahmad@gmail.com', plan: 'Pro', joined: 'Mar 12, 2025', status: 'active' },
+    { name: 'Sara Ali', email: 'sara@startup.io', plan: 'Free', joined: 'Mar 10, 2025', status: 'active' },
+    { name: 'James Wu', email: 'james@dev.co', plan: 'Team', joined: 'Mar 8, 2025', status: 'active' },
+    { name: 'Priya Mehta', email: 'priya@design.com', plan: 'Pro', joined: 'Feb 28, 2025', status: 'trial' },
+    { name: 'Carlos Ruiz', email: 'carlos@agency.net', plan: 'Free', joined: 'Feb 20, 2025', status: 'inactive' },
+  ];
+
+  const tbody = document.getElementById('user-table');
+  users.forEach(u => {
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td>${u.name}</td>
+      <td>${u.email}</td>
+      <td>${u.plan}</td>
+      <td>${u.joined}</td>
+      <td><span class="badge ${u.status}">${u.status}</span></td>
+    `;
+    tbody.appendChild(tr);
+  });
+
+  // Animate stats
+  function animateVal(el, target, prefix = '', suffix = '') {
+    let start = 0;
+    const step = target / 40;
+    const interval = setInterval(() => {
+      start = Math.min(start + step, target);
+      el.textContent = prefix + Math.floor(start).toLocaleString() + suffix;
+      if (start >= target) clearInterval(interval);
+    }, 30);
+  }
+  animateVal(document.getElementById('stat-users'), 2841);
+  animateVal(document.getElementById('stat-mrr'), 12400, '$');
+</script>
+</body>
+</html>

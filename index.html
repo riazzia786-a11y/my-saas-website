@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LaunchKit — Build Faster, Ship Smarter</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="navbar">
+    <div class="nav-inner">
+      <a href="/" class="logo">⬡ LaunchKit</a>
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="login.html" class="btn-ghost">Sign In</a>
+        <a href="dashboard.html" class="btn-solid">Get Started Free</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-badge">✦ Now in public beta</div>
+    <h1 class="hero-title">Build your SaaS<br/><em>without the chaos</em></h1>
+    <p class="hero-sub">LaunchKit gives you the infrastructure, dashboard, and tools to go from idea to live product — in days, not months.</p>
+    <div class="hero-actions">
+      <a href="dashboard.html" class="btn-primary">Start for free →</a>
+      <a href="#features" class="btn-secondary">See how it works</a>
+    </div>
+    <div class="hero-meta">No credit card required · Free forever plan · Deploy in 1 click</div>
+
+    <div class="hero-visual">
+      <div class="dash-preview">
+        <div class="dp-bar">
+          <span class="dp-dot r"></span><span class="dp-dot y"></span><span class="dp-dot g"></span>
+          <span class="dp-title">dashboard.launchkit.io</span>
+        </div>
+        <div class="dp-body">
+          <div class="dp-sidebar">
+            <div class="dp-sitem active">⬡ Overview</div>
+            <div class="dp-sitem">◈ Analytics</div>
+            <div class="dp-sitem">⊞ Projects</div>
+            <div class="dp-sitem">◎ Users</div>
+            <div class="dp-sitem">⚙ Settings</div>
+          </div>
+          <div class="dp-main">
+            <div class="dp-cards">
+              <div class="dp-card"><span class="dp-num">2,841</span><span class="dp-label">Active Users</span></div>
+              <div class="dp-card"><span class="dp-num">$12.4k</span><span class="dp-label">MRR</span></div>
+              <div class="dp-card"><span class="dp-num">98.9%</span><span class="dp-label">Uptime</span></div>
+            </div>
+            <div class="dp-chart">
+              <div class="dp-bar-wrap">
+                <div class="dp-bar-item" style="height:40%"></div>
+                <div class="dp-bar-item" style="height:60%"></div>
+                <div class="dp-bar-item" style="height:45%"></div>
+                <div class="dp-bar-item" style="height:80%"></div>
+                <div class="dp-bar-item" style="height:65%"></div>
+                <div class="dp-bar-item" style="height:90%"></div>
+                <div class="dp-bar-item active" style="height:75%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOGOS -->
+  <section class="logos">
+    <p class="logos-label">Trusted by teams at</p>
+    <div class="logos-row">
+      <span>Vercel</span><span>Supabase</span><span>Stripe</span><span>Netlify</span><span>GitHub</span><span>Linear</span>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features" id="features">
+    <div class="section-header">
+      <span class="section-tag">Features</span>
+      <h2>Everything you need.<br/>Nothing you don't.</h2>
+      <p>We stripped out the bloat. LaunchKit is lean, fast, and built for founders who ship.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feat-card feat-big">
+        <div class="feat-icon">◈</div>
+        <h3>Real-time Analytics</h3>
+        <p>Track users, revenue, and events as they happen. Beautiful charts, zero setup required.</p>
+        <div class="feat-tag">Live data</div>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">⊞</div>
+        <h3>Auth in 5 Minutes</h3>
+        <p>Email, Google, GitHub login — pre-built and production-ready out of the box.</p>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">◎</div>
+        <h3>Database Included</h3>
+        <p>Postgres-powered backend via Supabase. Free tier handles thousands of users.</p>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">⚡</div>
+        <h3>One-Click Deploy</h3>
+        <p>Push to GitHub, auto-deploy to Vercel. CI/CD pipeline configured for you.</p>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">⬡</div>
+        <h3>Custom Domain</h3>
+        <p>Connect your domain in seconds. SSL certificate auto-provisioned.</p>
+      </div>
+      <div class="feat-card feat-big right">
+        <div class="feat-icon">◐</div>
+        <h3>Team Collaboration</h3>
+        <p>Invite your co-founders, set roles, and build together. Real-time updates across the board.</p>
+        <div class="feat-tag">New</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="how" id="how">
+    <div class="section-header">
+      <span class="section-tag">Process</span>
+      <h2>Ship in 3 steps.</h2>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">01</div>
+        <h3>Clone & Configure</h3>
+        <p>Fork our template, set your env variables, connect Supabase. Takes 10 minutes.</p>
+      </div>
+      <div class="step-divider">→</div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <h3>Customize</h3>
+        <p>Change colors, copy, and features. Everything is modular and clearly documented.</p>
+      </div>
+      <div class="step-divider">→</div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <h3>Deploy & Grow</h3>
+        <p>Push to GitHub → Vercel auto-deploys. Share your URL. Start getting users.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="pricing" id="pricing">
+    <div class="section-header">
+      <span class="section-tag">Pricing</span>
+      <h2>Start free.<br/>Scale when ready.</h2>
+    </div>
+    <div class="pricing-grid">
+      <div class="plan">
+        <div class="plan-name">Free</div>
+        <div class="plan-price">$0 <span>/mo</span></div>
+        <ul class="plan-features">
+          <li>✓ Up to 1,000 users</li>
+          <li>✓ 3 Projects</li>
+          <li>✓ Basic Analytics</li>
+          <li>✓ Community Support</li>
+          <li>✗ Custom Domain</li>
+          <li>✗ Team Members</li>
+        </ul>
+        <a href="dashboard.html" class="btn-plan-ghost">Get Started</a>
+      </div>
+      <div class="plan plan-featured">
+        <div class="plan-badge">Most Popular</div>
+        <div class="plan-name">Pro</div>
+        <div class="plan-price">$19 <span>/mo</span></div>
+        <ul class="plan-features">
+          <li>✓ Unlimited Users</li>
+          <li>✓ Unlimited Projects</li>
+          <li>✓ Advanced Analytics</li>
+          <li>✓ Priority Support</li>
+          <li>✓ Custom Domain</li>
+          <li>✓ 5 Team Members</li>
+        </ul>
+        <a href="dashboard.html" class="btn-plan-solid">Start Free Trial</a>
+      </div>
+      <div class="plan">
+        <div class="plan-name">Team</div>
+        <div class="plan-price">$49 <span>/mo</span></div>
+        <ul class="plan-features">
+          <li>✓ Everything in Pro</li>
+          <li>✓ Unlimited Members</li>
+          <li>✓ SSO / SAML</li>
+          <li>✓ Audit Logs</li>
+          <li>✓ SLA Guarantee</li>
+          <li>✓ Dedicated Support</li>
+        </ul>
+        <a href="dashboard.html" class="btn-plan-ghost">Contact Sales</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="section-header">
+      <span class="section-tag">FAQ</span>
+      <h2>Common questions.</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Is it really free to start?</summary>
+        <p>Yes. Our free tier is generous and never expires. No credit card needed. You only upgrade when your business grows.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What database does it use?</summary>
+        <p>We use Supabase (Postgres) for the database. Their free tier gives you 500MB storage and handles thousands of rows — more than enough to start.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Can I deploy to Vercel or Netlify?</summary>
+        <p>Absolutely. LaunchKit is built for both. We include a vercel.json and netlify.toml config. Just connect your GitHub repo and it deploys automatically.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Do I need a backend developer?</summary>
+        <p>No. Supabase handles the backend, auth, and database. You just write frontend code and configure the dashboard. No server management needed.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner">
+    <h2>Ready to launch?</h2>
+    <p>Join thousands of founders building their SaaS with LaunchKit.</p>
+    <a href="dashboard.html" class="btn-primary large">Get started for free →</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo">⬡ LaunchKit</span>
+        <p>Build and ship your SaaS product without the overhead.</p>
+      </div>
+      <div class="footer-links">
+        <div>
+          <h4>Product</h4>
+          <a href="#features">Features</a>
+          <a href="#pricing">Pricing</a>
+          <a href="dashboard.html">Dashboard</a>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <a href="#">About</a>
+          <a href="#">Blog</a>
+          <a href="#">Careers</a>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 LaunchKit. Built with ♥ and zero VC money.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
